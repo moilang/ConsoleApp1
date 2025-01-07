@@ -23,15 +23,16 @@ namespace ConsoleApp1
             string json = JsonConvert.SerializeObject(account, Formatting.Indented);
             Console.WriteLine(json);
 
-            /*//deserialize JSON
+            //20250107 uncomment below
+            //deserialize JSON
             string dj = @"{
-'Name':'Good Boys',
+'Name':'Good Day',
 'Genres': [
 'Action','Comedy']
 }";
             Account m = JsonConvert.DeserializeObject<Account>(dj);
             string name = m.Name;
-            Console.WriteLine(name);*/
+            Console.WriteLine(name);
 
         }
     }
