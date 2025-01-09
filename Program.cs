@@ -23,17 +23,7 @@ namespace ConsoleApp1
             string json = JsonConvert.SerializeObject(account, Formatting.Indented);
             Console.WriteLine(json);
 
-            //20250107 uncomment below
-            //deserialize JSON
-            string dj = @"{
-'Name':'Good Day',
-'Genres': [
-'Action','Comedy']
-}";
-            Account m = JsonConvert.DeserializeObject<Account>(dj);
-            string name = m.Name;
-            Console.WriteLine(name);
-
+            Console.WriteLine("remove code 20250107 - branch dev/ting");
         }
     }
 }
